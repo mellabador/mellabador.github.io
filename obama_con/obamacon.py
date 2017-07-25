@@ -10,7 +10,7 @@ yellow = (252, 227, 166)
 # change IMAGENAME to the path on your computer to the image 
 # you're using'''
 
-my_image = Image.open("IMAGENAME") 
+my_image = Image.open("panda.jpg") 
 
 # each pixel is represented in the form 
 # (red value, green value, blue value, transparency)
@@ -20,8 +20,23 @@ image_list = my_image.getdata()
 # in a loop
 image_list = list(image_list)
 
-# list that will hold the pixel data for the new image
 recolored = [] 
+
+for x in image_list: 
+	intensity = x[0] + x[1] + x[2]
+
+	if intensity > 180 and intensity < 364: 
+		recolored.append(red)
+
+	else intensity > 364  and intensity < 546:
+		recolored.append(lightBlue)
+
+	else intensity > 546:
+		recolored.append(yellow)
+
+# list that will hold the pixel data for the new image
+
+
 #**************************************************#
 #**************************************************#
 

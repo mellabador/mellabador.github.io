@@ -13,17 +13,26 @@
   body {
     background-color: lightgreen;
   }
-
+  
   </style>
 </head>
 
+<div>
 
 <h1 align=center> About Me </h1>
 <body>
 
-<p>
+<script>
+//add window alert welcoming the viewer
+window.alert("Hello viewer! Welcome to Melinda's Page!")
+</script>
+
+<div>
 <img align = "right" src="b.png">
-My name is Melinda. I am a rising senior in Baruch College Campus High School.
+</div>
+
+<p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">
+My name is Melinda. I am a rising senior in <a href="Baruch.htm">Baruch College Campus High School</a>.
 I am currently 16 years old.
 I really enjoy listening to K-pop and watching K-dramas because I really love Korean culture.
 I also want to be able to travel many parts of the world because I had never been on a plane before.
@@ -33,7 +42,7 @@ Through this site I will be telling you more about myself!
 
 <br> <br> 
 
-<p>
+<p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">
 As a rising senior, I am well aware of the college process ahead of myself. I can already
 feel the pressure and stress of having to mentally preparing for the application such as
 the SATs, the college essays, the recommendation letters and other things. I have not fully
@@ -45,8 +54,14 @@ a lot of teachers. However, I try to take as many classes as I can to take hold 
 </p>
 
 <h1 align=center> K-pop and K-drama </h1>
-<img align="center" src="swag.gif" width=400>
-<p>
+
+<div>
+<img align="left" src="swag.gif" width=450>
+
+<img align="left" scr="goblin.gif" width=400>
+</div>
+
+<p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">
 
 I do not remember exactly how I got into K-Pop and K-dramas. However, I highly reccomend
 exploring the K-pop music viedos on YouTube because although they may seem strange
@@ -60,30 +75,36 @@ because people on the show that many risks to make the most enjoyment for their 
 </p>
 
 
-<ul>
-<li>Black Pink</li>
-<li>Seventeen</li>
-<li>IU</li>
-<li>BTS</li>
-<li>Red Velvet</li>
-<li>Mamamoo</li>
-<li>TWICE</li>
+<ul id = "list" style="display:none">
+
+<li>Black Pink <a href="Comeback.htm">As If its Your Last</a></li>
+<li>Seventeen <a href="Carat.htm">Don't Wanna Cry</a></li></li>
+<li>IU <a href="Palette.htm">Palette</a></li>
+<li>TWICE <a href="Signal.htm">Signal</a></li>
+<li>BTS <a href="Tear.htm">Blood Sweat and Tears</a></li>
+<li>Red Velvet <a href="Russian_Roulette.htm">Russian Roulette</a></li>
+<li>Mamamoo <a href="Best.htm">You're the Best</a></li>
+
 </ul>
+
+<button type="button" onclick="document.getElementById('list').style.display='block'">Find out about some groups!</button>
 
 <br> <br> <br>
 
-<img align="left" src="hairflip.gif" width=350>
-<img align="left" src="seventeen.gif" width=400>
-<img align="left" src="iu.gif" width=450>
-<img align="left" src="bts.gif" width=450>
-<img align="left" src="redvelvet.gif" width=400>
-<img align="left" src="radish.gif" width=400>
-<img align="left" src="tt.gif" width=400>
+<div>
+<img align="left" src="hairflip.gif" height=300 width=440>
+<img align="left" src="seventeen.gif" height=300 width=440>
+<img align="left" src="iu.gif" height= 300 width=440>
+<img align="left" src="tt.gif" height= 300 width=330>
+<img aln="left" src="bts.gif" height= 300 width=330>
+<img align="left" src="redvelvet.gif" height= 300 width=330>
+<img align="left" src="radish.gif" height= 300 width=330>
+</div>
 
 <br> <br> <br> 
 
-<div>
-  <p align="center">
+
+  <p align="center" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">
   Through my love for K-pop and K-dramas, I learnt a lot about the culture of South Korea
   as well as their delicious food. My favorite food is defientely Korean because it is amazing!
   Korean food is well known to be spicy or just mild. For instance, there are many flavors of
@@ -91,17 +112,45 @@ because people on the show that many risks to make the most enjoyment for their 
   is a "super" spicy ramen. There are different flavors now considering there is cheese flavor,
   chicken flavor, spicy X2 flavor and many more.
   </p>
-</div>
+
 
 <h1 align=center> Food Life </h1>
-<p>
-I really enjoy exploring the types of foods in the city with my friends. We decided to make
-a food squad group because we enjoyed trying out new foods/desserts. An easy way to plan
-places to go is through the app Yelp. Another way is through Insider.
 
+<div>
+<img align="left" src="insider_food.jpg" height=300 width=330>
+</div>
+
+<p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">
+I would consider myself a foodie because I love food and eating food. I really enjoy exploring many
+types of foods in the city with my friends. We (my friends and I) even decided to make
+a food squad group because we enjoyed trying out new foods/desserts. An easy way to plan
+places to go is through the app Yelp. It helps to find food around your location as well as helping you to 
+find certain types of food that you desire. The app is convient and helpful! Also, it allows you to see the reviews and comments 
+of other customers. You are able to see what you would expect if you were going to the store.
+Another way is through Insider. Insider have made many videos of their experience of certain stores 
+and emphasized the beauty of their food. It opens your options to other stores you did not know of before
+as well as different areas you have never explored.
 </p>
 
-<h1 align=center> Projects </h1>
+<h1 align=center> Volunteer </h1>
 
+<h3 align=center> P.S. 2 Meyer London Elementary School </h3>
+
+
+<h1 align=center> Extracurricular Activities </h1>
+
+
+<h3 align=center> Girls Who Code (Adobe NYC) </h3>
+
+<p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">
+Through Girls Who Code (GWCs), I learnt a lot of the fundamentals of coding and met new people from different
+backgrounds and skills. It started simply with simple Scratch and later throughout the weeks we expanded our
+knowledge to HTML, CSS, JavaScript, Python, and may more. My outlook of computer science has shifted throughout the 
+weeks as I realize how complex coding is to how many things could be achieved through coding. I was also able to listen 
+to other people's stories and their journey in the field they are in. Their stories and advice was empowering and 
+enlightening. I defientely want to reconsider taking courses in computer science in college.
+
+</p>
+</div>
 </body>
 <html>
