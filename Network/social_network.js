@@ -32,7 +32,7 @@ friends.innerHTML = response;
 function addFriend() {
 var user_input = document.getElementById("nameOfGirl").value;
 var new_friend = document.getElementById("nameOfFriend").value;
-getFriends[user_input].push(new_friend);
+names[user_input].push(new_friend);
 console.log(getFriends[user_input]);
 
   
