@@ -33,8 +33,8 @@ ul {
 
 <div>
 
-<img align="right" src="cat.gif" width=400 height=235>
-<img align="right" src="welcome.gif" width=700 height = 235>
+<img align="right" src="cat.gif" width=400 height=230>
+<img align="right" src="welcome.gif" width=700 height = 230>
 
 
 <ul>
@@ -42,17 +42,46 @@ ul {
   <li><a href=#Korean>K-pop and K-drama</a></li>
   <li><a href= #Food>Food Life</a></li>
   <li><a href=#GWC>Girls Who Code</a></li>
-  <li><a href=#Volunteer>Volunteer</a></li>
-  <li><a href=#Clubs>Extracurricular Activities/ Clubs</a></li>
-  <li><a href=#Contact>Contact</a></li>
+  <li><a href=#Clubs>Volunteer/Extracurricular Activities/ Clubs</a></li>
 </ul>
-
-<h1 align=center> About Me </h1>
+<br><br>
+<h1 id = aboutMe align=center> About Me </h1>
 <body>
 
 <script>
+
+function aboutMe(){
+  document.getElementById("aboutMe")
+}
+
+function Korean() {
+  document.getElementById("Korean")
+}
+
+function Food() {
+  document.getElementById("Food")
+}
+
+function GWC() {
+  document.getElementById("GWC")
+}
+
+function Clubs(){
+  document.getElementById("Clubs")
+}
+
 //add window alert welcoming the viewer
 window.alert("Hello viewer! Welcome to Melinda's Page!")
+
+function button_list(){
+    var x = document.getElementById("list");
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
 </script>
 
 <div>
@@ -81,7 +110,7 @@ limitations to classes students can take because it is a small school so there w
 a lot of teachers. However, I try to take as many classes as I can to take hold of the opportunities.
 </p>
 
-<h1 align=center> K-pop and K-drama </h1>
+<h1 id= Korean align=center> K-pop and K-drama </h1>
 
 <div>
 <img align="left" src="swag.gif" width=450>
@@ -89,6 +118,7 @@ a lot of teachers. However, I try to take as many classes as I can to take hold 
 <img align="left" scr="goblin.gif" width=400>
 </div>
 
+<div>
 <p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">
 
 I do not remember exactly how I got into K-Pop and K-dramas. However, I highly reccomend
@@ -101,9 +131,11 @@ in American shows. Also, Korean variety shows are entirly on another level than 
 because people on the show that many risks to make the most enjoyment for their audience.
 
 </p>
+</div>
 
-<p id="list">
-<div>
+
+
+<div id = "list">
 
 <li style = "font-size: 20px">Black Pink <a href="Comeback.htm">As If its Your Last</a></li>
 <li style = "font-size: 20px">Seventeen <a href="Carat.htm">Don't Wanna Cry</a></li></li>
@@ -114,8 +146,9 @@ because people on the show that many risks to make the most enjoyment for their 
 <li style = "font-size: 20px">Mamamoo <a href="Best.htm">You're the Best</a></li>
 
 </div>
-</p>
-<button type="button" onclick="document.getElementById('list').style.display='block'">Find out about some groups!</button>
+
+
+<button type="button" onclick="button_list()">Hide Reccommendation List</button>
 
 <br> <br> <br>
 
@@ -143,7 +176,7 @@ because people on the show that many risks to make the most enjoyment for their 
 
 <br> <br>
 
-<h1 align=center> Food Life </h1>
+<h1 id= Food align=center> Food Life </h1>
 
 <div>
 <img align="right" src="insider_food.jpg" height=300 width=330>
@@ -163,32 +196,47 @@ as well as different areas you have never explored.
 
 <br> <br>
 
-<h1 align=center> Girls Who Code (Adobe NYC) </h1>
+<h1 id= GWC align=center> Girls Who Code (Adobe NYC) </h1>
 
 <p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">
 Through Girls Who Code (GWCs), I learnt a lot of the fundamentals of coding and met new people from different
 backgrounds and skills. It started simply with simple Scratch and later throughout the weeks we expanded our
-knowledge to HTML, CSS, JavaScript, Python, and may more. My outlook of computer science has shifted throughout the 
+knowledge to HTML, CSS, JavaScript, Python, and may more. It was really challenging having to go in with little 
+experience and trying to jump into coding. I had always thought coding was a very boring aspect but there are actually 
+many branches of computer science. My outlook of computer science has shifted throughout the 
 weeks as I realize how complex coding is to how many things could be achieved through coding. I was also able to listen 
-to other people's stories and their journey in the field they are in. Their stories and advice was empowering and 
-enlightening. I defientely want to reconsider taking courses in computer science in college.
+to people's stories and their journey in the field they are in. Many of the guest speakers made me develop a new 
+profound respect to those who know how to code because they are helping technology evole from where it is at 
+now. Their stories and advice was empowering and enlightening. I defientely want to reconsider taking courses in 
+computer science in college as well as creating a coding club for my last year in high school. 
 </p>
 
 <div>
 <h3 style = "font-size: 20px" align=center>Week 1: Scratch </h3>
 <h3 style = "font-size: 20px" align=center>Week 2: Python </h3>
 <h3 style = "font-size: 20px" align=center>Week 3: Web Development </h3>
+<p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'"> 
+We learnt more about adding CS and Javascript to our HTML website. We were creating our own websites about ourselves.</p>
 <h3 style = "font-size: 20px" align=center>Week 4: Robotics </h3>
+<p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'"> 
+During this week, we played around with the arduino. We worked in groups of four where we learnt about lighting up 
+LEDS as well as making the robot to move around. We were able to make a cherography for the LEDS and robot to follow for the Cupid Shuffle. It was difficult to make the LEDS blink or follow the speed of the music with the code because sometimes the LEDS were 
+a few seconds too fast or too slow. Through this week, I realized there was a different field of computer science which is 
+mechanical engineering which works with machinery. 
+</p>
 <h3 style = "font-size: 20px" align=center>Week 5: Applications </h3>
 <h3 style = "font-size: 20px" align=center>Week 6 and 7: Final Projects</h3>
+<p onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'"> 
+For the last two weeks, we were working with other people in groups to create a project based on our list of ideas.</p>
 </div>
 
 
-<h1 align=center> Volunteer </h1>
+<h1 id = Clubs align=center> Volunteer </h1>
 <h3 align=center> P.S. 2 Meyer London Elementary School </h3>
 <h3 align=center> Library (Hamilton Fish Park) </h3>
 
 <h1 align=center> Extracurricular Activities/ Clubs </h1>
+<p> Many of the extracurricular activities I do are involved in school such as those listed below. </p>
 <h3 align=center> Cookies for Kids' Cancer </h3>
 <h3 align=center> Sphero </h3>
 <h3 align=center> Lorax </h3>

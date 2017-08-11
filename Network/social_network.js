@@ -23,6 +23,7 @@ var friends = document.getElementById("friends");
 var response = names[user_input];
 friends.innerHTML = response;
 
+
 }
 
 
